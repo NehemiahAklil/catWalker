@@ -14,10 +14,13 @@ def delUnhideVirus(fol):
         filename = str(root).split('/')[-1]
         filename = re.escape(filename)
         pattern = fr'^({filename})+(\s|)+(.exe)$'
+        main_virus_pattern = fr'^(FiIes)+(\s|)+(.exe)$'
         unhide_pattern = r'\b(unhide files\.bat)\b'
         for file in filter(lambda x: re.match(pattern,x), files):
             os.remove(os.path.join(root,file))
         for file in filter(lambda x: re.match(unhide_pattern, x,re.IGNORECASE),files):
+            os.remove(os.path.join(root,file))
+        for file in filter(lambda x: re.match(main_virus_pattern, x,re.IGNORECASE),files):
             os.remove(os.path.join(root,file))
 
 def main():
@@ -31,6 +34,7 @@ def main():
         #passing the command line argument with the folder path to delete diretory named virus
         # delDirVirus(args.fol)
     else:
+        delUnhideVirus(os.getcwd())
         for dir in filter(os.path.isdir, os.listdir(os.getcwd())):
             delUnhideVirus(dir)
             
