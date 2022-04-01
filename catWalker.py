@@ -5,14 +5,15 @@ import re
 def delDirVirus(fol):
     for root, dirs, files in os.walk(fol):
         filename = str(root).split('/')[-1]
-        pattern = f'^({filename})+(\s|)+(.exe)$'
+        pattern = fr'^({filename})+(\s|)+(.exe)$'
         for file in filter(lambda x: re.match(pattern,x), files):
             os.remove(os.path.join(root,file))
 
 def delUnhideVirus(fol):
     for root, dirs, files in os.walk(fol):
         filename = str(root).split('/')[-1]
-        pattern = f'^({filename})+(\s|)+(.exe)$'
+        filename = re.escape(filename)
+        pattern = fr'^({filename})+(\s|)+(.exe)$'
         unhide_pattern = r'\b(unhide files\.bat)\b'
         for file in filter(lambda x: re.match(pattern,x), files):
             os.remove(os.path.join(root,file))
