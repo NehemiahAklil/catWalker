@@ -30,7 +30,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/NehemiahAklil/catWalker">
-    <img src="img/logo.png" alt="Logo" width="90" height="120">
+    <img src="img/logo.png" alt="Logo" width="120" height="120">
   </a>
 
 <h3 align="center"><b>Cat Walker</b></h3>
