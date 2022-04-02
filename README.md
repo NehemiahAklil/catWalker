@@ -135,7 +135,7 @@ Distributed under the GNU v3.0 License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/AklilNehemiah) - nehemiahaklil@tutanota.com
+Your Name - [@AklilNehemiah](https://twitter.com/AklilNehemiah) - nehemiahaklil@tutanota.com
 
 Project Link: [https://github.com/NehemiahAklil/catWalker](https://github.com/NehemiahAklil/catWalker)
 
