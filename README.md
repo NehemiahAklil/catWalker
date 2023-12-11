@@ -33,10 +33,10 @@
     <img src="img/logo.png" alt="Logo" width="150" height="150">
   </a>
 
-<h3 align="center"><b>Cat Walker</b></h3>
+<h3 align="center"><b>Cat Walkers</b></h3>
 
   <p align="center">
-    Python Script to remove directory named executable virus 
+    My own little <b>Cat Walkers</b> to walk over tasks and there close friends <b>Mice Nabbers</b> to catch annoying virus and scripts. 
     <br />
     <a href="https://github.com/NehemiahAklil/catWalker/issues">Report Bug</a>
     ·
@@ -50,8 +50,14 @@
 ## About The Project
 
 <!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
- This is a fun little script I wrote to help me remove one very annoying virus that will infect your USB drives in a matter of instance hope you like it and please give a star if you do.
+My own little <b>Cat Walkers</b> to walk over repetitive tasks to automate things with ease and there close friends <b>Mice Nabbers</b> to catch annoying virus and scripts hope you like it and please give a star if you do.
 
+### Cat Walkers
+#### Midnight
+ Midnight prowls thorugh a github repository and clones specified branches into folders 
+### Mice Nabbers 
+#### Prowling Panther
+ Prowling Panther specializes in Catching "batch file infector" type malware <b>'Unhide FIles.bat'</b> which is a very annoying virus that will infect your USB drives in a matter of instance it creates an executable with the name of your folders.
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
@@ -63,13 +69,13 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-First things first you need to install python.
+First things first you need to install python and go.
 * python
   ```sh
-  pacman -Syu python3
+  pacman -Syu python3 go
   ```
   ```
-  sudo apt get python3
+  sudo apt get python3 go
   ```
 ### Installation
 
@@ -86,21 +92,45 @@ First things first you need to install python.
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Here is how you can use the script. Be cautious when using this script for because it iterates over every folder and sub-folder which might end up taking a lot more time even crash if the directory has too many files or sub folders espeacially be aware if your local machine is older.  
+### Cat Walkers 
+#### Midnight 
+Here is how you can use the midnight to walk through the tideous exercise of cloning specific branches for a repo.
+* Open the folder
+    ```sh
+    cd catWalker/walkers
+    ```
+* Use it to prowl thourgh a directoriy and its sub-directories to clean it by passing the folder name
+  
+    ```sh
+    go run midnight.go repoLink branchName1 branchName2 ...
+    ```
+* Or you can run the following command to build the executable:
+    ```sh
+    go build midnight.go 
+    ```
+* This will generate an executable file named midnight (or midnight.exe on Windows). Now you can run the executable directly from the terminal:
+    ```sh
+    ./midnight repoLink branchName1 branchName2 ...
+    ```
+
+### Mice Nabbers 
+#### Prowling Panther 
+Here is how you can use the prowling panther script. Be cautious when using this script for because it prowls over every folder and sub-folder which might end up taking a lot more time even crash if the directory has too many files or sub folders espeacially be aware if your local machine is older.  
 
 * Open the folder
     ```sh
-    cd catWalker
+    cd catWalker/nabbers
     ```
-* Use it to clean directoriy and its sub-directories by passing the folder name
+* Use it to prowl thourgh a directoriy and its sub-directories to clean it by passing the folder name
   
     ```sh
-    python3 catWalker.py <foldername> 
+    python3 prowling_panther.py <foldername> 
     ```
-* Or just execute it and it will search the folder its in and its sub-directories
+* Or just execute it and it will prowl the folder its in and its sub-directories
     ```sh
-    python3 catWalker.py 
+    python3 prowling_panther.py
     ```
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 

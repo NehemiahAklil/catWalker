@@ -4,7 +4,7 @@
 block_cipher = None
 
 
-a = Analysis(['catWalker.py'],
+a = Analysis(['prowling_panther.py'],
              pathex=[],
              binaries=[],
              datas=[],
